@@ -17,7 +17,7 @@ if not isfile("interactedWithDiscordPrompt.txt") then
     local Inviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
     Inviter.Prompt({
         name = "Zepsyy's Server",
-        invite = "https://discord.gg/zepsyy",
+        invite = "https://discord.gg/zepsina",
     })
 end
 --#endregion
@@ -36,8 +36,8 @@ local Window = Rayfield:CreateWindow({
 	},
     Discord = {
         Enabled = false,
-        Invite = "zepsyy", -- The Discord invite code, do not include discord.gg/
-        RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+        Invite = "zepsina", -- The Discord invite code, do not include discord.gg/
+        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
     },
     KeySystem = false
 })
@@ -609,7 +609,7 @@ DoorsMods:CreateParagraph({Title="Warning", Content="If you'd like to reset the 
 DoorsMods:CreateButton({
 	Name = "Spawn Red Room",
 	Callback = function()
-        firesignal(game.ReplicatedStorage.Bricks.UseEventModule.OnClientEvent, "tryp", workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")], 9e307)
+        firesignal(game.ReplicatedStorage.Bricks.UseEventModule.OnClientEvent, "tryp", workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")], 7)
         -- Imagine someone actually waits 90000000000000000... seconds for the red room to run out, would be crazy 
 	end,
 })
